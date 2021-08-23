@@ -2,10 +2,20 @@ import React, {useState} from 'react';
 import './style.css'
 
 /** hooks 版本 */
-function AddPostForm(props){
+/*在函数件内部通过hook api做状态管理的逻辑*/
 
+function AddPostForm(props){
+  /*state: title, content*/
+  /*设置初始值*/
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
+
+  //替换
+  // const [{title, constant}, setState] = useState({
+  //   title: ''
+  //   content: ''
+  // })
+  
 
   const handleChange = (e) => {
     if (e.target.name === 'title') {
