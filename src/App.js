@@ -5,6 +5,7 @@ import Editor from './features/editor';
 import Login from './features/login';
 import Post from './features/post';
 
+/*定于4个路由路径*/
 function App() {
   return (
     <Router>
@@ -16,7 +17,7 @@ function App() {
           </Route>
           <Route path="/editor">
             <Editor />
-          </Route>
+          </Route> 
           <Route path="/login">
             <Login />
           </Route>

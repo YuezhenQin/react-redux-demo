@@ -3,7 +3,7 @@ import React from 'react';
 const ArticleList = (props) => {
   const { articles } = props;
 
-  // 列表渲染，列表中的每一项要设置 key
+  // 列表中的每一项要设置 key
   return articles.map((item) => {
     const { id, title } = item;
     return <div key={id}> {title}</div>;
