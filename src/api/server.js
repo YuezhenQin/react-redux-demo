@@ -9,6 +9,7 @@ import {
   Response,
 } from 'miragejs';
 
+//模拟
 import faker from 'faker';
 import { sentence, paragraph, article, setRandom } from 'txtgen';
 import { parseISO } from 'date-fns';

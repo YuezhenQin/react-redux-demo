@@ -30,6 +30,8 @@ export async function client(endpoint, { body, ...customConfig } = {}) {
   }
 }
 
+
+//get,post
 client.get = function (endpoint, customConfig = {}) {
   return client(endpoint, { ...customConfig, method: 'GET' });
 };

@@ -8,9 +8,11 @@ import { client } from './api/client';
 //   { id: 3, title: 'Article 3' },
 // ];
 
+//App这个函数件中使用了useEffect, 去做网络请求的调用, 通过发送网络请求获取文章数据，这是一个副作用
 function App() {
   const [articles, setArticles] = useState([])
 
+  //useEffect
   useEffect(()=> {
     const fetchArticles = async () => {
       try{
